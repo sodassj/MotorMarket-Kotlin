@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1087662514454",
+    "project_id": "motormarket-8abc7",
+    "storage_bucket": "motormarket-8abc7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1087662514454:android:05f15156e5a5bd98cc7037",
+        "android_client_info": {
+          "package_name": "com.david.maldonado.motormarket"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASEh2Oiuu7UDCnCN5i-IX-YjLwLk20SdY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,67 @@
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.jetbrains.kotlin.android)
+    id("com.google.gms.google-services")  // Complemento de Google Services
+}
+
+android {
+    namespace 'com.david.maldonado.motormarket'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.david.maldonado.motormarket"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    viewBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    implementation libs.androidx.core.ktx
+    implementation libs.androidx.appcompat
+    implementation libs.material
+    implementation libs.androidx.activity
+    implementation libs.androidx.constraintlayout
+    testImplementation libs.junit
+    androidTestImplementation libs.androidx.junit
+    androidTestImplementation libs.androidx.espresso.core
+
+    // Firebase BoM (Bill of Materials) para gestionar versiones de las bibliotecas de Firebase
+    implementation platform("com.google.firebase:firebase-bom:33.7.0")  // No especificar versiones aquí
+
+    // Firebase Analytics
+    implementation "com.google.firebase:firebase-analytics"
+
+    // Puedes agregar otras dependencias de Firebase aquí
+    implementation 'com.google.firebase:firebase-auth:21.2.0' // Para autenticación
+    implementation 'com.google.firebase:firebase-database:20.3.0' // Para base de datos
+    implementation 'com.squareup.picasso:picasso:2.8' // Para manejo de imágenes
+    implementation 'com.paypal.sdk:paypal-android-sdk:2.16.0' // Para pasarela de pago
+    implementation 'com.google.android.material:material:1.9.0' // Material Design
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.7.0' // Navegación
+    implementation 'androidx.navigation:navigation-ui-ktx:2.7.0' // Navegación UI
+    implementation 'com.google.firebase:firebase-database:20.3.0'
+    implementation 'com.google.firebase:firebase-auth:21.0.3'  // Para autenticación
+    implementation 'com.google.firebase:firebase-firestore:24.0.1'  // Para Firestore
+    implementation "androidx.viewpager2:viewpager2:1.0.0"
+}

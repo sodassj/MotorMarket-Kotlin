@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores básicos -->
+    <color name="black">#FF000000</color> <!-- Color negro, ideal para texto -->
+    <color name="white">#FFFFFFFF</color> <!-- Color blanco, para fondos o texto sobre fondo oscuro -->
+
+    <!-- Colores principales -->
+    <color name="colorPrimary">#3F51B5</color> <!-- Azul principal -->
+    <color name="purple_500">#6200EE</color> <!-- Morado fuerte -->
+
+    <!-- Colores secundarios -->
+    <color name="blue_700">#1976D2</color> <!-- Azul más oscuro para enlaces o botones secundarios -->
+    <color name="soft_blue">#A7C7E7</color> <!-- Azul suave, para fondos o detalles suaves -->
+
+    <!-- Colores adicionales -->
+    <color name="gray_light">#D3D3D3</color> <!-- Gris claro para fondos suaves o bordes -->
+    <color name="gray_dark">#616161</color> <!-- Gris oscuro para textos secundarios o detalles sutiles -->
+    <color name="green_success">#4CAF50</color> <!-- Verde para estados de éxito (por ejemplo, botones de éxito) -->
+    <color name="red_error">#F44336</color> <!-- Rojo para mostrar mensajes de error -->
+</resources>
