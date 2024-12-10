@@ -31,6 +31,8 @@
         <activity android:name=".CarListActivity" />
         <activity android:name=".CarDetailActivity" />
         <activity android:name=".PaymentActivity" />
+        <activity android:name=".PromotionsActivity" />
+        <activity android:name=".SettingsActivity" />
     </application>
 
 </manifest>

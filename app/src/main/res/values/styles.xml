@@ -1,0 +1,26 @@
+<resources>
+    <!-- Definir el tema principal de la aplicación -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Colores de la barra de herramientas y barra de estado -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+
+        <!-- Habilitar la barra de acción -->
+        <item name="windowActionBar">true</item>
+
+        <!-- Deshabilitar título en la ventana principal -->
+        <item name="windowNoTitle">true</item>
+
+        <!-- Personalización de la Toolbar -->
+        <item name="actionBarTheme">@style/ToolbarTheme</item>
+    </style>
+
+    <!-- Estilo específico para la Toolbar -->
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
+    <style name="NavigationMenuItemTextStyle">
+        <item name="android:textSize">22sp</item> <!-- Cambia el tamaño de la fuente aquí -->
+        <item name="android:textColor">@color/black</item> <!-- Cambia el color de la fuente si es necesario -->
+    </style>
+</resources>

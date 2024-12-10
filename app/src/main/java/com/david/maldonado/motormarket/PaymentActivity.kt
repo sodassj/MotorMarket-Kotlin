@@ -25,6 +25,9 @@ class PaymentActivity : AppCompatActivity() {
             binding.carBrandTextView.text = it.brand
             binding.carModelTextView.text = it.model
             binding.carPriceTextView.text = "$${it.price}"
+
+            // Cargar la imagen del coche de acuerdo al recurso que pasa el objeto Car
+            binding.carImageView.setImageResource(it.imageResId) // Esto asigna la imagen dinámica
         } ?: run {
             // Si no se pasa información del coche, mostrar error y finalizar actividad
             Toast.makeText(this, "Error al cargar la información del coche.", Toast.LENGTH_SHORT)
